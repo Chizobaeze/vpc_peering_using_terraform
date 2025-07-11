@@ -1,6 +1,6 @@
-# vpc_peering_using_terraform
-Quest-Development is where game developers build and test new features. 
-Arena-Staging is used to test those features before release.
+# VPC_PEERING_USING_TERRAFORM
+## Quest-Development is where game developers build and test new features. 
+## Arena-Staging is used to test those features before release.
 
 At first, these two environments couldn't talk to each other. This made testing harder and slower. Developers had to copy staging services into Quest, and testers couldn’t check early changes easily.
 To fix this, a VPC peering connection was set up. This created a secure link between the two environments. Now, Quest can access services in Arena, and testers can see changes sooner. With better communication, development and testing became faster, easier, and more efficient. Peering helped both teams work better together.
