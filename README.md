@@ -1,8 +1,8 @@
 # VPC_PEERING_USING_TERRAFORM
 
-At first, these two environments couldn't talk to each other. This made testing harder and slower. Developers had to copy staging services into Quest, and testers couldn’t check early changes easily.
-To fix this, a VPC peering connection was set up. This created a secure link between the two environments. Now, Quest can access services in Arena, and testers can see changes sooner. With better communication, development and testing became faster, easier, and more efficient. Peering helped both teams work better together.
+At StellarTech, development was slowed because our testing environment, **Quest**, couldn’t access staging services in **Arena**. Developers had to copy services manually, and testers couldn’t check early changes easily.
 
+We solved this by setting up a VPC peering connection, creating a secure link between Quest and Arena. Now, testers can see updates sooner, and development cycles are faster and more efficient. This simple connection boosted collaboration and helped our teams deliver higher-quality features, quicker.
 # Quest-Arena VPC Peering
 
 This repository contains the Terraform infrastructure code for establishing a **secure VPC peering connection** between the following environments:
@@ -10,7 +10,7 @@ This repository contains the Terraform infrastructure code for establishing a **
 * **Quest-Development**: The development environment where game developers build and test new features.
 * **Arena-Staging**: The staging environment used for pre-release testing and validation.
 
-## 📖 Background
+##  Background
 
 Initially, Quest-Development and Arena-Staging operated in isolation:
 
@@ -19,7 +19,7 @@ Initially, Quest-Development and Arena-Staging operated in isolation:
 
 This slowed down testing, introduced duplication of work, and delayed feedback.
 
-## 🚀 Solution
+##  Solution
 
 To solve this, we implemented **VPC peering**:
 
@@ -46,7 +46,7 @@ The infrastructure is managed with **Terraform**:
 
 ```
 quest-arena-peering/
-├── main.tf              # Main Terraform configuration
+├── vpc_peer.tf              # Main Terraform configuration
 ├── backend.tf           # Outputs after deployment
 ├── providers.tf         ## Remote backend configuration
 ├── README.md            # Project documentation
@@ -89,13 +89,13 @@ quest-arena-peering/
    terraform apply
    ```
 
-## 🔒 Security
+##  Security
 
 * Traffic between Quest and Arena flows securely through the VPC peering connection.
 * No public exposure of services.
 * Access is restricted via route tables and security groups.
 
-## 📈 Future Improvements
+##  Future Improvements
 
 * Add automated tests for connectivity.
 * Implement monitoring and logging for peering traffic.
@@ -103,4 +103,4 @@ quest-arena-peering/
 
 ---
 
-👾 **With VPC peering, Quest and Arena now collaborate seamlessly, making game development and testing faster, smoother, and more efficient.**
+ **With VPC peering, Quest and Arena now collaborate seamlessly, making game development and testing faster, smoother, and more efficient.**
