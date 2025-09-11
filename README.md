@@ -27,6 +27,8 @@ To solve this, we implemented **VPC peering**:
 * Enabled Quest to access Arena services directly.
 * Allowed testers to validate changes earlier.
 
+  ![vpc screenshot](https://github.com/Chizobaeze/vpc_peering_using_terraform/blob/4e2de19b533d09149201282f0b8c0608cd228803/vpc_peering_connection.PNG)
+
 ### Benefits
 
 * Faster development cycles.
