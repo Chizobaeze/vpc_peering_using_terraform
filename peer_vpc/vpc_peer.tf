@@ -1,3 +1,11 @@
+resource "aws_s3_bucket" "data_vpc_data" {
+  bucket = "data-vpc-data"
+
+  tags = {
+    Name        = "database_peer"
+    Environment = "infrastructure"
+  }
+}
 
 resource "aws_vpc" "arena" {
   cidr_block       = "10.0.0.0/16"
