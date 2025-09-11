@@ -67,9 +67,8 @@ quest-arena-peering/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-org/quest-arena-peering.git
-   cd quest-arena-peering
-   ```
+   git clone https://github.com/Chizobaeze/vpc_peering_using_terraform.git
+   cd vpc_peering_using_terraform
 
 2. Initialize Terraform:
 
